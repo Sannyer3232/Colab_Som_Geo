@@ -4,7 +4,8 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackContext, ConversationHandler
 from botTelegram.bot import handle_location, handle_audio, cancel, start, LOCATION, AUDIO
 
-TOKEN = '7621244735:AAHYyFa1QI99bSLDl9jpwkB2L0QX10kQzwY'
+# Token disponibilizado após a criação do bot no Telegram
+TOKEN = ''
 
 
 def get_public_ip():
@@ -19,7 +20,7 @@ def get_public_ip():
 
 
 def main():
-    # Obtém o IP público da instância Railway
+    # Obtém o IP público da instância
     public_ip = get_public_ip()
     if public_ip:
         print(f"IP público do Railway: {public_ip}")
